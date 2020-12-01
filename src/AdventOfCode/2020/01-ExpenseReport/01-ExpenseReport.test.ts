@@ -1,3 +1,5 @@
+import { resolve } from "path";
+import { readNumberArrayFromFile } from "../utils/readFiles";
 import { findExpenseReportError, findExpenseReportError2, findSumOfThreeNumbersEquals, findSumOfTwoNumbersEquals, readPuzzleInput } from "./01-ExpenseReport";
 const testNumbers = [1721, 979, 366, 299, 675, 1456];
 it('works for test input', () => {
@@ -5,14 +7,10 @@ it('works for test input', () => {
     expect(findExpenseReportError(testNumbers)).toEqual(514579)
 })
 
-it('reads file Input', async () => {
-    const input = await readPuzzleInput();
-    expect(input.length).toEqual(200);
-})
-
 it('finds the solution', async () => {
-    const input = await readPuzzleInput()
-    expect(findExpenseReportError(input)).toEqual(840324)
+    const inputFilePath = resolve(__dirname, 'puzzleInput.txt')
+    const inputArr = await readNumberArrayFromFile(inputFilePath)
+    expect(findExpenseReportError(inputArr)).toEqual(840324)
 })
 
 it("works for 3 inputs", () => {
@@ -21,6 +19,7 @@ it("works for 3 inputs", () => {
 })
 
 it('finds the solution part 2', async () => {
-    const input = await readPuzzleInput()
-    expect(findExpenseReportError2(input)).toEqual(170098110)
+    const inputFilePath = resolve(__dirname, 'puzzleInput.txt')
+    const inputArr = await readNumberArrayFromFile(inputFilePath)
+    expect(findExpenseReportError2(inputArr)).toEqual(170098110)
 })
