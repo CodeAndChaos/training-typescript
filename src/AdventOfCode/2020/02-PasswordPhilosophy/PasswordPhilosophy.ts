@@ -1,14 +1,16 @@
 interface PasswordRule { min: number, max: number, char: string, pass: string }
 
 export const parsePasswordInput = (rule: string): PasswordRule => {
-    let [minMax, char, pass] = rule.split(" ")
-    char = char.replace(":", "")
-
-    let [min, max] = minMax.split("-").map(val => { return parseInt(val, 10) })
-
-    return {
-        min, max, char, pass
+    const match = rule.match(/(\d+)-(\d+) (\w{1}): (.*)/)
+    if (match) {
+        const [, min, max, char, pass] = match;
+        return {
+            min: parseInt(min, 10), max: parseInt(max, 10), char, pass
+        }
+    } else {
+        throw new Error(`Not a valid input ${rule}`)
     }
+
 }
 
 export const verifyPasswordEntry = ({ pass, min, max, char }: PasswordRule) => {
