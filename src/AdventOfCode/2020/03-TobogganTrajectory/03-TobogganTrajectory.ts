@@ -1,17 +1,18 @@
 import { multiplyNumbers } from "../utils/arrayUtils";
-const countCharsInString = (input: string, char: string): number {
-    return input.split(char).length - 1
-}
 
-export const tobogganTrajectory = (map: string[][], down = 1, right = 3): any => {
+export const tobogganTrajectory = (map: string[][], down = 1, right = 3): number => {
     let j = 0;
-    let tobogganPath = "";
+    let treeCount = 0;
     for (let i = 0; i < map.length; i = i + down) {
-        tobogganPath += map[i][j]
+        if (map[i][j] === "#"){
+            treeCount++;
+        }
+        
         j += right;
         j = j % map[i].length
     }
-    return countCharsInString(tobogganPath, "#");
+    
+    return treeCount;
 }
 
 export const multiplePaths = (map: string[][]) => {

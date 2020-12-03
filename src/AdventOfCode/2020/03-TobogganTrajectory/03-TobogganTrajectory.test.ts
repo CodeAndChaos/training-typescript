@@ -4,16 +4,16 @@ import { multiplePaths, tobogganTrajectory } from "./03-TobogganTrajectory";
 
 const demoMap = () => {
     const inputMap = `..##.......
-    #...#...#..
-    .#....#..#.
-    ..#.#...#.#
-    .#...##..#.
-    ..#.##.....
-    .#.#.#....#
-    .#........#
-    #.##...#...
-    #...##....#
-    .#..#...#.#`
+#...#...#..
+.#....#..#.
+..#.#...#.#
+.#...##..#.
+..#.##.....
+.#.#.#....#
+.#........#
+#.##...#...
+#...##....#
+.#..#...#.#`
     return inputMap.split("\n").map(val => val.split(""))
 }
 
@@ -24,8 +24,8 @@ const puzzleMap = async () => {
 }
 
 it("finds example path", () => {
-   
-    expect(tobogganTrajectory(demoMap())).toEqual(7);
+    const map = demoMap();
+    expect(tobogganTrajectory(map)).toEqual(7);
 })
 
 it("finds the solution", async () => {  

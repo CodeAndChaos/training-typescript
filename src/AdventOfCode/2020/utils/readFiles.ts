@@ -8,7 +8,7 @@ export const readNumberArrayFromFile = async (path: string): Promise<number[]> =
 export const readDataArrayFromFile = async (path: string): Promise<string[]> => {
     try {
         const file = await readFile(path, 'utf-8');
-        return file.split('\r\n')
+        return file.replace('\r\n', '\n').split('\n')
     } catch (e) {
         console.log(e);
         return [];
