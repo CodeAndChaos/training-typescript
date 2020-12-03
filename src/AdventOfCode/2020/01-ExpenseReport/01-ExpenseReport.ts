@@ -1,3 +1,4 @@
+import { multiplyNumbers } from "../utils/arrayUtils";
 
 export const findSumOfTwoNumbersEquals = (numArr: number[], sum: number) => {
     const firstFactor = numArr.find(val => numArr.includes(sum - val));
@@ -20,9 +21,7 @@ export const findSumOfThreeNumbersEquals = (numArr: number[], sum: number) => {
 
 
 
-export const multiplyNumbers = (...arg: number[]) => {
-    return arg.reduce((acc, val) => val * acc)
-}
+
 
 
 const reportRepair = (fun: (arr: number[], sum: number) => number[] | undefined, inputArr: number[]): number => {
