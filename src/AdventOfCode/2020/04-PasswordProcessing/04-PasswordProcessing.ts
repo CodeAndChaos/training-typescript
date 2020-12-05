@@ -41,9 +41,9 @@ const hasValidData = (data: string) => {
             }
             return false
         },
-        hcl: (str: string) => str.match(/#(\d|[a-f]){6}/) !== null,
+        hcl: (str: string) => /#(\d|[a-f]){6}/.test(str),
         ecl: (str: string) => ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"].includes(str),
-        pid: (str: string) => str.match(/\d{9}/) !== null && str.length === 9,
+        pid: (str: string) => /^\d{9}$/.test(str),
         cid: (str: string) => true
     }
     const fields = data.split(" ").filter(val => val.length);
