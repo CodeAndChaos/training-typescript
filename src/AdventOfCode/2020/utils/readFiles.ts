@@ -17,7 +17,7 @@ export const readDataArrayFromFile = async (path: string): Promise<string[]> => 
 }
 
 const readData = async (dir: string, filename: string) => {
-    const inputFilePath = resolve(__dirname, filename)
+    const inputFilePath = resolve(dir, filename)
     let inputArr = await readDataArrayFromFile(inputFilePath)
     return inputArr;
 }

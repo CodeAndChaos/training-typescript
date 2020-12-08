@@ -8,11 +8,6 @@ export const processColumn = (str: string) => {
     return parseInt(str, 2)
 }
 
-const prepareString = (str: string): string => {
-    
-}
-
-
 export const processBoardingString = (str: string) => {
     const row = processRow(str.substr(0, str.length - 3))
     const column = processColumn(str.substr(str.length - 3, str.length))

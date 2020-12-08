@@ -16,7 +16,7 @@ export const processAnswerArray2 = (input: string[]) => {
         }
     })
     const remapped = groups.map((val) => {
-        let mappedString = {}
+        let mappedString: {[x:string]: number} = {}
         val.map(str => {
             str.split("").forEach(char => mappedString[char] = (mappedString[char] || 0) + 1 )
         })
