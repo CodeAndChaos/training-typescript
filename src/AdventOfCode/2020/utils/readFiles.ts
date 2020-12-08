@@ -1,4 +1,5 @@
 import { readFile } from "fs/promises";
+import { resolve } from "path";
 
 export const readNumberArrayFromFile = async (path: string): Promise<number[]> => {
     const dataArray = await readDataArrayFromFile(path)
@@ -13,4 +14,19 @@ export const readDataArrayFromFile = async (path: string): Promise<string[]> => 
         console.log(e);
         return [];
     }
+}
+
+const readData = async (dir: string, filename: string) => {
+    const inputFilePath = resolve(__dirname, filename)
+    let inputArr = await readDataArrayFromFile(inputFilePath)
+    return inputArr;
+}
+
+export const readDemoData = async (dir:string) => {
+    return await readData(dir, 'demoinput.txt')
+}
+
+
+export const readPuzzleData = async (dir:string) => {
+    return await readData(dir, 'puzzleinput.txt')
 }
