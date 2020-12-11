@@ -20,5 +20,5 @@ it("does something", async() => {
 
 it("does something", async() => {
     const input = await readPuzzleData(__dirname);
-    expect(handheldHaltingPart2(input)).toEqual(1475);
+    expect(handheldHaltingPart2(input)).toEqual(1270);
 })
