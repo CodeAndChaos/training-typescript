@@ -35,5 +35,5 @@ it("finds all differences", async () => {
 it("finds all differences", async () => {
     const input = await readData(__dirname, "demoinput2.txt")
     const data = input.map(val => parseInt(val, 10))
-    expect(possibleCombinations(data)).toEqual(19208)
+    expect(possibleCombinations(data)).toEqual(23328)
 })

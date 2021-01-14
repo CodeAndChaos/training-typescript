@@ -19,5 +19,5 @@ it('processes an entry', async () => {
 
 it('finds the solution', async () => {
     const data = await readPuzzleData(__dirname)
-    expect(prepareList(data)).toEqual(120)
+    expect(prepareList(data)).toEqual(198)
 })

@@ -27,7 +27,7 @@ export const prepareList = (input: string[]) => {
 
     let {translations, foundWords} = findTranslation(rawTranslation)
     let allergens = unknownWords.filter(word => !foundWords.includes(word))
-    console.log( allergens)
+
     return [...new Set(allergens)].length + 1
 }
  

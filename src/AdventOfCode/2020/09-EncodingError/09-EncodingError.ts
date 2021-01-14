@@ -18,15 +18,16 @@ export const findEncodingError = (inputData: string[], preamble = 5) => {
 
 export const findContiguousSum = (num: number, inputData: number[], index = 0): number[] => {
     let sum = 0;
-    let vals = []
+    let values: number[] = []
     for (let i = index; i < inputData.length; i++) {
         sum += inputData[i]
-        vals.push(inputData[i])
+        values.push(inputData[i])
         if (sum === num) {
-            return vals
+            return values
         }
         if (sum > num) {
             return findContiguousSum(num, inputData, index + 1)
         }
     }
+    return values;
 }

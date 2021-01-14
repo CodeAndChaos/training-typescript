@@ -50,7 +50,7 @@ const hasValidData = (data: string) => {
     return fields.filter(val => {
         const [field, value] = val.split(":")
         // @ts-ignore
-        return !fieldValidationMap[field](value)
+        return !(fieldValidationMap[field](value))
     }).length === 0
 }
 
