@@ -29,7 +29,7 @@ it("finds example path", () => {
 })
 
 it("finds the solution", async () => {  
-    expect(tobogganTrajectory(await puzzleMap())).toEqual(77);
+    expect(tobogganTrajectory(await puzzleMap())).toEqual(162);
 })
 
 it("finds example path part 2", () => {

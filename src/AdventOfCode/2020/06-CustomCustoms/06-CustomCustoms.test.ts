@@ -29,5 +29,5 @@ it('reads demodata', async () => {
 it('reads demodata', async () => {
     const inputArr = await readData('puzzleinput.txt');
     
-    expect(processAnswerArray2(inputArr)).toBe(0)
+    expect(processAnswerArray2(inputArr)).toBe(3229)
 })
