@@ -1,4 +1,4 @@
-import { countVowels, halvesAreAlike, splitStringInHalf } from "./07-StringHalves"
+import { countVowels, countVowels2, halvesAreAlike, splitStringInHalf } from "./07-StringHalves"
 
 it("string halves test 1", () => {
     expect(halvesAreAlike("book")).toBe(true)
@@ -21,4 +21,9 @@ it("splits string in two parts", () => {
 it("counts Vowels", () => {
     expect(countVowels("book")).toBe(2)
     expect(countVowels("AbCdEfGh")).toBe(2)
+})
+
+it("counts Vowels", () => {
+    expect(countVowels2("book")).toBe(2)
+    expect(countVowels2("AbCdEfGh")).toBe(2)
 })

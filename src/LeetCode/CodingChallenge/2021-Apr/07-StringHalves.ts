@@ -1,6 +1,4 @@
 // Problem: Determine if String Halves Are Alike
-
-
 // https://leetcode.com/explore/challenge/card/april-leetcoding-challenge-2021/593/week-1-april-1st-april-7th/3699/
 
 export function splitStringAtPosition(s: string, pos: number): string[] {
@@ -14,6 +12,13 @@ export function splitStringInHalf(s: string): string[] {
 export function countVowels(s: string): number {
     const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
     return [...s].filter(val => vowels.includes(val)).length
+}
+
+export function countVowels2(s: string): number {
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    return [...s].reduce<number>((acc, val) => {
+        return acc + Number(vowels.includes(val))
+    }, 0)
 }
 
 
