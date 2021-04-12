@@ -38,5 +38,5 @@ it("finds example path part 2", () => {
 
 
 it("finds the solution part 2", async () => {  
-    expect(multiplePaths(await puzzleMap())).toEqual(1528900758);
+    expect(multiplePaths(await puzzleMap())).toEqual(3064612320);
 })
