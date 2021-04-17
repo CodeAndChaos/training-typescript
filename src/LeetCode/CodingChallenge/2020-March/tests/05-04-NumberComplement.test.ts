@@ -1,4 +1,4 @@
-import { findComplement } from "./05-04-NumberComplement"
+import { findComplement } from "../05-04-NumberComplement"
 
 it("example 1", () => {
     expect(findComplement(5)).toEqual(2)

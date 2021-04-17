@@ -1,4 +1,4 @@
-import { letterCombinations } from "./09-LetterCombinations";
+import { letterCombinations } from "../09-LetterCombinations";
 
 it('tests letter combinations', () => {
     let digits = "23";

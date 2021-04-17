@@ -1,4 +1,4 @@
-import { removeDuplicates } from "./16-RemoveDuplicatesInString";
+import { removeDuplicates } from "../16-RemoveDuplicatesInString";
 
 it("test 1", () => {
     const input = "abcd";

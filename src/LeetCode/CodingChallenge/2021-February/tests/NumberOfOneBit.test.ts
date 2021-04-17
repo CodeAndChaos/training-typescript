@@ -1,4 +1,4 @@
-import { hammingWeight } from "./NumberOfOneBit"
+import { hammingWeight } from "../NumberOfOneBit"
 
 it('test1', (() => {
     const input = parseInt("00000000000000000000000000001011", 2)

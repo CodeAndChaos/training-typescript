@@ -1,4 +1,4 @@
-import { arrayToList, listToArray, partition } from "./14-Partition"
+import { arrayToList, listToArray, partition } from "../14-Partition"
 
 it('converts arrays to lists', () => {
     expect(arrayToList([1, 4, 3, 2, 5, 2])).toEqual({ "next": { "next": { "next": { "next": { "next": { "next": null, "val": 2 }, "val": 5 }, "val": 2 }, "val": 3 }, "val": 4 }, "val": 1 })
@@ -6,7 +6,7 @@ it('converts arrays to lists', () => {
 
 it('converts listToArray', () => {
     const list = arrayToList([])
-    expect(listToArray(list)).toEqual([])
+    expect(listToArray(list)).toEqual([0])
 })
 
 it('converts listToArray', () => {
@@ -21,5 +21,5 @@ it('does standard test 1', () => {
 
 it('does standard test 1', () => {
     const input = partition(arrayToList([]),0)
-    expect(listToArray(input)).toEqual([])
+    expect(listToArray(input)).toEqual([0])
 })

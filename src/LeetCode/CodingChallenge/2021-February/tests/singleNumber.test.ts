@@ -1,4 +1,4 @@
-import { singleNumber } from "./singleNumber"
+import { singleNumber } from "../singleNumber"
 
 it("single Number test 1", ()=> {
     const nums = [2,2,1]

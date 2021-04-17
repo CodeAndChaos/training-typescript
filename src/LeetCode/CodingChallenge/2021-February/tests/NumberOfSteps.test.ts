@@ -1,4 +1,4 @@
-import { numberOfSteps } from "./NumberOfSteps"
+import { numberOfSteps } from "../NumberOfSteps"
 
 it("number of steps test 1", () => {
     expect(numberOfSteps(14)).toBe(6)

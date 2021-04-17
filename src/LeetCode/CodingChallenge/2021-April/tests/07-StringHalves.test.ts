@@ -1,4 +1,4 @@
-import { countVowels, countVowels2, halvesAreAlike, splitStringInHalf } from "./07-StringHalves"
+import { countVowels, countVowels2, halvesAreAlike, splitStringInHalf } from "../07-StringHalves"
 
 it("string halves test 1", () => {
     expect(halvesAreAlike("book")).toBe(true)
