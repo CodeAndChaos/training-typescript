@@ -13,21 +13,21 @@ const readData = async (filename: string) => {
 it('reads demodata', async () => {
     const inputArr = await readData('demoinput.txt');
     
-    expect(processAnswerArray(inputArr)).toBe(11)
+    expect(processAnswerArray(inputArr)).toBe(4)
 })
 it('reads data', async () => {
     const inputArr = await readData('puzzleinput.txt');
-    expect(processAnswerArray(inputArr)).toBe(6437)
+    expect(processAnswerArray(inputArr)).toBe(27)
 })
 
 it('reads demodata', async () => {
     const inputArr = await readData('demoinput.txt');
     
-    expect(processAnswerArray2(inputArr)).toBe(6)
+    expect(processAnswerArray2(inputArr)).toBe(0)
 })
 
 it('reads demodata', async () => {
     const inputArr = await readData('puzzleinput.txt');
     
-    expect(processAnswerArray2(inputArr)).toBe(3229)
+    expect(processAnswerArray2(inputArr)).toBe(0)
 })

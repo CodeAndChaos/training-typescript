@@ -4,7 +4,7 @@ it('finds positive pairs', () => {
     const input = [1,3,2,5,6,7,8,9];
     const value = 3;
     const output = [[1,2]]
-    expect(findPairs(value, input)).toEqual(output);
+    expect(findPairs2(value, input)).toEqual(output);
 })
 
 it('finds no pairs', () => {

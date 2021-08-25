@@ -34,5 +34,5 @@ it("finds an answer for part 2", async () => {
             break;
         }
     }
-    expect(seat).toEqual(515)
+    expect(seat).toEqual(52)
 })
