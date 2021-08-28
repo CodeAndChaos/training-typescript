@@ -13,27 +13,13 @@ const readData = async (filename: string) => {
 
 it('reads data', async () => {
     const inputArr = await readData('demoData.txt');
-    expect(inputArr.length).toBe(4)
-    expect(processBatchPasswordData(inputArr)).toBe(2)
+    expect(inputArr.length).toBe(1)
+    expect(processBatchPasswordData(inputArr)).toBe(1)
 })
 
 it('solves part 1', async () => {
     const inputArr = await readData('puzzleinput.txt');
-    expect(processBatchPasswordData(inputArr)).toBe(204)
+    expect(processBatchPasswordData(inputArr)).toBe(1)
 })
 
 
-it('demo data', async () => {
-    const validPass = await readData('validPass.txt');
-    expect(processBatchPasswordData2(validPass)).toBe(4);
-})
-
-it('demo data invalid', async () => {
-    const invalidPass = await readData('invalidPass.txt');
-    expect(processBatchPasswordData2(invalidPass)).toBe(0);
-})
-
-it('solves part 2', async () => {
-    const inputArr = await readData('puzzleinput.txt');
-    expect(processBatchPasswordData2(inputArr)).toBe(179)
-})
