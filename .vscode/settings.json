@@ -1,5 +1,4 @@
 {
-    "cSpell.words": [
-        "nums"
-    ]
+  "cSpell.words": ["nums"],
+  "jest.jestCommandLine": "jest"
 }
