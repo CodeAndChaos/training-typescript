@@ -26,7 +26,15 @@ export const readDemoData = async (dir:string) => {
     return await readData(dir, 'demoinput.txt')
 }
 
+export const readDemoData2 = async (dir:string) => {
+    return await readData(dir, 'demoinput2.txt')
+}
+
 
 export const readPuzzleData = async (dir:string) => {
     return await readData(dir, 'puzzleinput.txt')
+}
+
+export const readPuzzleData2 = async (dir:string) => {
+    return await readData(dir, 'puzzleinput2.txt')
 }
