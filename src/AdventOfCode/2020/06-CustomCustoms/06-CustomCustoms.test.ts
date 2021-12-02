@@ -1,6 +1,6 @@
 import { read } from "fs";
 import { resolve } from "path";
-import { readDataArrayFromFile } from "../utils/readFiles";
+import { readDataArrayFromFile } from "../../utils/readFiles";
 import { processAnswerArray,processAnswerArray2 } from "./06-CustomCustoms";
 
 

@@ -1,4 +1,4 @@
-import { readDemoData, readPuzzleData} from "../utils/readFiles";
+import { readDemoData, readPuzzleData} from "../../utils/readFiles";
 import { handheldHaltingPart1, handheldHaltingPart2 } from "./08-HandheldHalting";
 
 it("does something", async() => {

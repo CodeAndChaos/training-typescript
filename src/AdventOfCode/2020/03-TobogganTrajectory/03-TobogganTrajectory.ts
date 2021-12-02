@@ -1,4 +1,4 @@
-import { multiplyNumbers } from "../utils/arrayUtils";
+import { multiplyNumbers } from "../../utils/arrayUtils";
 
 export const tobogganTrajectory = (map: string[][], down = 1, right = 3): number => {
     let j = 0;

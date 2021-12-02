@@ -1,4 +1,4 @@
-import { readDemoData, readPuzzleData } from "../utils/readFiles";
+import { readDemoData, readPuzzleData } from "../../utils/readFiles";
 import { findContiguousSum, findEncodingError } from "./09-EncodingError";
 
 it("tests the demo data part 1", async () => {

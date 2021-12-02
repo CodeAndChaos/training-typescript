@@ -1,4 +1,4 @@
-import { multiplyNumbers } from "../utils/arrayUtils";
+import { multiplyNumbers } from "../../utils/arrayUtils";
 
 export const findSumOfTwoNumbersEquals = (numArr: number[], sum: number) => {
     const firstFactor = numArr.find(val => numArr.includes(sum - val));

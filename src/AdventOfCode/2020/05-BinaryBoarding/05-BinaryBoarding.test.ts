@@ -1,5 +1,5 @@
 import { resolve } from "path"
-import { readDataArrayFromFile } from "../utils/readFiles"
+import { readDataArrayFromFile } from "../../utils/readFiles"
 import { processBoardingString, processColumn, processRow } from "./05-BinaryBoarding"
 
 it("works for processing a string", () => {

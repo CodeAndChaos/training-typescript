@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { readDataArrayFromFile } from "../utils/readFiles";
+import { readDataArrayFromFile } from "../../utils/readFiles";
 import { findBagSolution, findBagSolution2, readMapOfRules, readRule } from "./07-HandyHaversacks";
 
 const readData = async (filename: string) => {

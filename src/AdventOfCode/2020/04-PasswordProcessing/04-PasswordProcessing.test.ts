@@ -1,6 +1,6 @@
 import { read } from "fs";
 import { resolve } from "path";
-import { readDataArrayFromFile } from "../utils/readFiles";
+import { readDataArrayFromFile } from "../../utils/readFiles";
 import { processBatchPasswordData, processBatchPasswordData2 } from "./04-PasswordProcessing";
 
 const readData = async (filename: string) => {

@@ -1,4 +1,4 @@
-import { readData, readDemoData, readPuzzleData } from "../utils/readFiles"
+import { readData, readDemoData, readPuzzleData } from "../../utils/readFiles"
 import { chainOfAllAdapters, possibleCombinations } from "./10-AdapterArray"
 
 it("finds all differences", async () => {

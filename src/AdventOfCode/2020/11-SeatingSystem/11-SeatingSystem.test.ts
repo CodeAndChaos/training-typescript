@@ -1,4 +1,4 @@
-import { readDemoData, readPuzzleData } from "../utils/readFiles"
+import { readDemoData, readPuzzleData } from "../../utils/readFiles"
 import { changeStateOfBoard, countSeats, createBoard, simulateSeating } from "./11-SeatingSystem"
 
 it("tests", async () => {

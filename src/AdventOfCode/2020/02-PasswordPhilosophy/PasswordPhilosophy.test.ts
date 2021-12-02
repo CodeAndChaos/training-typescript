@@ -1,5 +1,5 @@
 import { resolve } from "path"
-import { readDataArrayFromFile } from "../utils/readFiles"
+import { readDataArrayFromFile } from "../../utils/readFiles"
 import { parsePasswordInput, validPasswords, verifyPasswordEntry, verifyPasswordEntryAlternative } from "./PasswordPhilosophy"
 
 const exampleEntries = [

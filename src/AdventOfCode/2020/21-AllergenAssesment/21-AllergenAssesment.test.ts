@@ -1,4 +1,4 @@
-import { readDemoData, readPuzzleData } from "../utils/readFiles"
+import { readDemoData, readPuzzleData } from "../../utils/readFiles"
 import { parseInputString, prepareList } from "./21-AllergenAssesment"
 
 it('processes an entry', async () => {

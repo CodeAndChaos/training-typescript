@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { readDataArrayFromFile } from "../utils/readFiles";
+import { readDataArrayFromFile } from "../../utils/readFiles";
 import { multiplePaths, tobogganTrajectory } from "./03-TobogganTrajectory";
 
 const demoMap = () => {

@@ -1,5 +1,5 @@
 import { resolve } from "path";
-import { readNumberArrayFromFile } from "../utils/readFiles";
+import { readNumberArrayFromFile } from "../../utils/readFiles";
 import { findExpenseReportError, findExpenseReportError2, findSumOfThreeNumbersEquals, findSumOfTwoNumbersEquals } from "./01-ExpenseReport";
 const testNumbers = [1721, 979, 366, 299, 675, 1456];
 it('works for test input', () => {
