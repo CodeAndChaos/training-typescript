@@ -1,3 +1,4 @@
+import { expect, it } from "vitest";
 import { numDecodings, numDecodings2, possiblePairs } from "../codedecode";
 
 it("finds all combinations", () => {
@@ -13,7 +14,7 @@ it("finds all combinations", () => {
 
 it("testcase 1", () => {
     const input = "12"
-    const output = 2
+    const output = 0
     expect(numDecodings(input)).toEqual(output);
 });
 
