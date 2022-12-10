@@ -1,6 +1,6 @@
 import { readDemoData, readPuzzleData } from "../../utils/readFiles"
 import { parseInputString, prepareList } from "./21-AllergenAssesment"
-
+import { expect, it } from "vitest";
 it('processes an entry', async () => {
     const data = await readDemoData(__dirname)
     expect(parseInputString(data[0])).toEqual({

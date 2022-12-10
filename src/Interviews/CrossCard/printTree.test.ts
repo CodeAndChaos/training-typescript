@@ -1,4 +1,5 @@
 import { printTree, Tree } from "./printTree";
+import { expect, it } from "vitest";
 
 it("traverses the tree", () => {
     let tree: Tree = {

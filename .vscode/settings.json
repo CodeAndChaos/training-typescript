@@ -1,4 +1,5 @@
 {
   "cSpell.words": ["nums"],
-  "jest.jestCommandLine": "jest"
+  "jest.jestCommandLine": "jest",
+  "testing.automaticallyOpenPeekView": "never"
 }

@@ -1,6 +1,6 @@
 import { readDemoData, readPuzzleData } from "../../utils/readFiles"
 import { changeStateOfBoard, countSeats, createBoard, simulateSeating } from "./11-SeatingSystem"
-
+import { expect, it } from "vitest";
 it("tests", async () => {
     const data = await readDemoData(__dirname)
     const board = createBoard(data)

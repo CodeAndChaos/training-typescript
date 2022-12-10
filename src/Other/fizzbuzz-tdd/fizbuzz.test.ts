@@ -1,4 +1,5 @@
 import {fizzBuzz} from './fizbuzz';
+import { expect, it } from "vitest";
 it("Returns Fizz on division by 3", () => {
     expect(fizzBuzz(3)).toBe("Fizz");
 });

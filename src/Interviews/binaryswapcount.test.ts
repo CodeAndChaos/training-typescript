@@ -1,5 +1,5 @@
 import { minBinarySwapCount } from "./binaryswapcount";
-
+import { expect, it } from "vitest";
 it('returns 0', () => {
     let arr = [1,1,1,1,0,0,0,0,0]
     let result = minBinarySwapCount(arr);

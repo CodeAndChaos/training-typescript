@@ -1,5 +1,5 @@
 import { isValidSudoku } from "../validateSoduku";
-
+import { expect, it } from "vitest";
 it('isValid', () => {
     let board =
         [["5", "3", ".", ".", "7", ".", ".", ".", "."]

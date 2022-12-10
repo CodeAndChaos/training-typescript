@@ -1,5 +1,5 @@
 import { hammingWeight } from "../NumberOfOneBit"
-
+import { expect, it } from "vitest";
 it('test1', (() => {
     const input = parseInt("00000000000000000000000000001011", 2)
     expect(hammingWeight(input)).toBe(3)

@@ -1,5 +1,5 @@
 import { singleNumber } from "../singleNumber"
-
+import { expect, it } from "vitest";
 it("single Number test 1", ()=> {
     const nums = [2,2,1]
     expect(singleNumber(nums)).toEqual(1)

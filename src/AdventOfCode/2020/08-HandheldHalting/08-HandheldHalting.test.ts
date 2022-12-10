@@ -1,6 +1,6 @@
 import { readDemoData, readPuzzleData} from "../../utils/readFiles";
 import { handheldHaltingPart1, handheldHaltingPart2 } from "./08-HandheldHalting";
-
+import { expect, it } from "vitest";
 it("does something", async() => {
     const input = await readDemoData(__dirname);
     expect(handheldHaltingPart1(input)).toEqual(5);

@@ -1,5 +1,5 @@
 import { logParser, readLogLine } from "./logparser";
-
+import { expect, it } from "vitest";
 it('converts to json', () => {
     let input = `2021-10-20T12:43:34.000Z 2021-10-20T12:43:35.000Z info back-end-3 ac->ad
 2021-10-20T12:43:33.000Z 2021-10-20T12:43:36.000Z info back-end-1 aa->ac

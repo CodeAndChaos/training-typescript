@@ -1,5 +1,5 @@
 import { findPairs, findPairs2 } from "./addArray"
-
+import { expect, it } from "vitest";
 it('finds positive pairs', () => {
     const input = [1,3,2,5,6,7,8,9];
     const value = 3;

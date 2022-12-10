@@ -1,5 +1,5 @@
 import { UnitConverters } from "./unitConverter";
-
+import { expect, it } from "vitest";
 it("converts Celsius to Fahrenheit", () => {
   expect(UnitConverters.celsiusToFarenheit(0)).toBe(32);
   expect(UnitConverters.celsiusToFarenheit(100)).toBe(212);

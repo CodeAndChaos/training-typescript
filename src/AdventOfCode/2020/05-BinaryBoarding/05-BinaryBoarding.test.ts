@@ -1,7 +1,7 @@
 import { resolve } from "path"
 import { readDataArrayFromFile } from "../../utils/readFiles"
 import { processBoardingString, processColumn, processRow } from "./05-BinaryBoarding"
-
+import { expect, it } from "vitest";
 it("works for processing a string", () => {
     expect(processRow("FBFBBFF")).toEqual(44)
 })
@@ -34,5 +34,5 @@ it("finds an answer for part 2", async () => {
             break;
         }
     }
-    expect(seat).toEqual(52)
+    expect(seat).toEqual(515)
 })

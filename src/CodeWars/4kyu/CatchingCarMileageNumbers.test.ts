@@ -1,5 +1,5 @@
 import { isAllDigitEqual, isInteresting, isNumberFollowedByZeros,isAwesomeNumber, isPalindrome, isSequentialNumberDecreasing, isSequentialNumberIncreasing } from "./CatchingCarMileageNumbers";
-
+import { expect, it } from "vitest";
 it('should work, dangit!', function () {
     expect(isInteresting(3, [1337, 256])).toEqual(0);
     expect(isInteresting(1336, [1337, 256])).toEqual(1);

@@ -1,6 +1,6 @@
 
 import { areTheyTheSame } from './are-they-the-same';
-
+import { expect, it } from "vitest";
 
 it("is equal, test 1", () => {
     const a1 = [121, 144, 19, 161, 19, 144, 19, 11];

@@ -1,5 +1,5 @@
 import { intersect, removeDuplicates, singleNumber } from "./ArrayQuestions";
-
+import { expect, it } from "vitest";
 it('Task 1 - Removes Duplicates', () => {
     expect(removeDuplicates([1, 1, 2])).toEqual(2);
 });

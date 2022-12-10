@@ -1,5 +1,5 @@
 import { letterCombinations } from "../09-LetterCombinations";
-
+import { expect, it } from "vitest";
 it('tests letter combinations', () => {
     let digits = "23";
     let output = ["ad","ae","af","bd","be","bf","cd","ce","cf"]

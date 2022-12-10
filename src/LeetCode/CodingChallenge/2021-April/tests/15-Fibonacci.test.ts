@@ -1,5 +1,5 @@
 import { fib } from "../15-Fibonacci";
-
+import { expect, it } from "vitest";
 it('test1', () => {
     expect(fib(2)).toBe(1);
 })

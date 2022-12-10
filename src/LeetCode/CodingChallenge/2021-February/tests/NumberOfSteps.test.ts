@@ -1,5 +1,5 @@
 import { numberOfSteps } from "../NumberOfSteps"
-
+import { expect, it } from "vitest";
 it("number of steps test 1", () => {
     expect(numberOfSteps(14)).toBe(6)
 })

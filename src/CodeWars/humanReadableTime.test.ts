@@ -1,5 +1,5 @@
 import { humanReadable } from "./humanReadableTime";
-
+import { expect, it } from "vitest";
 it('should format correctly', function() {
     expect(humanReadable(0)).toBe('00:00:00');
     expect(humanReadable(5)).toBe( '00:00:05');

@@ -1,4 +1,5 @@
 import { sumPairs } from "./sum-of-pairs";
+import { expect, it } from "vitest";
 
 const l1 = [1, 4, 8, 7, 3, 15];
 const l2 = [1, -2, 3, 0, -6, 1];

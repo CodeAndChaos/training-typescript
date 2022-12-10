@@ -7,7 +7,7 @@
  */
 
 import { numeralDecoder } from "./romanNumeralsDecoder"
-
+import { expect, it } from "vitest";
 it("default tests", () => {
     expect(numeralDecoder('XXI')).toBe(21)
     expect(numeralDecoder('I')).toBe(1)

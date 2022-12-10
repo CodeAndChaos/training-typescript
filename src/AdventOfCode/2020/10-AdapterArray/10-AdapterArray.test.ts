@@ -1,6 +1,6 @@
 import { readData, readDemoData, readPuzzleData } from "../../utils/readFiles"
 import { chainOfAllAdapters, possibleCombinations } from "./10-AdapterArray"
-
+import { expect, it } from "vitest";
 it("finds all differences", async () => {
     const input = await readDemoData(__dirname)
     const data = input.map(val => parseInt(val, 10))

@@ -1,6 +1,7 @@
 import { resolve } from "path";
 import { readDataArrayFromFile } from "../../utils/readFiles";
 import { findBagSolution, findBagSolution2, readMapOfRules, readRule } from "./07-HandyHaversacks";
+import { expect, it } from "vitest";
 
 const readData = async (filename: string) => {
     const inputFilePath = resolve(__dirname, filename)

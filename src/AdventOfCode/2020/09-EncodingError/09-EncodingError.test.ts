@@ -1,6 +1,6 @@
 import { readDemoData, readPuzzleData } from "../../utils/readFiles";
 import { findContiguousSum, findEncodingError } from "./09-EncodingError";
-
+import { expect, it } from "vitest";
 it("tests the demo data part 1", async () => {
     const demoData = await readDemoData(__dirname);
     expect(findEncodingError(demoData)).toEqual(127)

@@ -1,4 +1,5 @@
 import { urlify, urlifyCharArray, urlifyCharArray2, urlifyNoReplace } from "../0103-URLify";
+import { expect, it } from "vitest";
 
 const testWhitespaceFunctions = (fun: (text: string) => string) => {
     expect(fun("NoWhiteSpace")).toEqual("NoWhiteSpace");
