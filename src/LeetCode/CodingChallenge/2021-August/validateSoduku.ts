@@ -19,7 +19,6 @@ const isValid = (board: string[][], row: number, col: number, char: string): boo
     const colStart = Math.floor(col / 3) * 3 ;
     for (let i = rowStart; i < rowStart + 3; i++) {
         for (let j = colStart; j < colStart + 3; j++) {
-            console.log(board[i][j]);
             if (board[i][j] === char && i !== row && j !== col) return false;
         }
     }

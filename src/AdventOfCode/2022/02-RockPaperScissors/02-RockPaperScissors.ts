@@ -1,4 +1,4 @@
-export const rockpaperPart1 = (input: string[]) => {
+export const rockPaperPart1 = (input: string[]) => {
   const valMap: Record<string, { type: string; value: number }> = {
     A: {
       type: "ROCK",
@@ -28,6 +28,8 @@ export const rockpaperPart1 = (input: string[]) => {
 
   const processedInput = input.map((val) => {
     let [player1, player2] = val.split(" ");
+    player1 = player1.charAt(0);
+    player2 = player2.charAt(0);
     let score = valMap[player1].value;
     if (valMap[player1].type === valMap[player2].type) {
       return score + 3;

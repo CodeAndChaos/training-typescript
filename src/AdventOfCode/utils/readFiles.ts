@@ -11,7 +11,6 @@ export const readDataArrayFromFile = async (path: string): Promise<string[]> => 
         const file = await readFile(path, 'utf-8');
         return file.replace('\r\n', '\n').split('\n')
     } catch (e) {
-        console.log(e);
         return [];
     }
 }

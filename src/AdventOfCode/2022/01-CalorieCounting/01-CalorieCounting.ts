@@ -6,7 +6,7 @@ const processElvesCarryInput = (input: string[]): number[] => {
       index++;
       newValues[index] = 0;
     } else {
-      newValues[index] += parseInt(val, 10);
+      newValues[index] += Number(val);
     }
   });
   return newValues;
@@ -20,5 +20,6 @@ export const calorieCounting = (input: string[]) => {
 export const calorieCountingPart2 = (input: string[]) => {
   const caloriesCount = processElvesCarryInput(input);
   caloriesCount.sort((a, b) => b - a);
-  return caloriesCount[0] + caloriesCount[1] + caloriesCount[2];
+  
+  return caloriesCount.reduce((a, b) => a + b, 0);
 };

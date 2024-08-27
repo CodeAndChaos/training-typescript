@@ -13,4 +13,3 @@ const unluckyDays = (year: number): number => {
 }
 
 const result = unluckyDays(2015);
-console.log(result)
